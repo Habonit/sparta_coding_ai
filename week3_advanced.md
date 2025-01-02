@@ -77,16 +77,16 @@
 ## 4.Fine-tuning 결과 - Fine-tuning 전후의 결과 차이가 어떻게 되나요?
 
     1) MNLI: 링크의 4. 모델 결과 차트화 셀 참조.
-        ![MNLI - Loss Curve](./data/image.png)
+        ![MNLI - Loss Curve](./image_data/image.png)
 
-        ![MNLI - Result](./data/image-2.png)
+        ![MNLI - Result](./image_data/image-2.png)
 
         - 일반 30% 대에서 54% 정도의 accuracy와 f1, zeroshot으로는 55%의 accuracy와 f1을 기록했습니다.
 
     2) Translation: 링크의 4. 모델 결과 차트화 셀 참조.
-        ![Translation - Loss Curve](./data/image-1.png)
+        ![Translation - Loss Curve](./image_data/image-1.png)
 
-        ![Translation - Result](./data/image-3.png)
+        ![Translation - Result](./image_data/image-3.png)
 
         - t5를 사용하여 초기 blew 0.42에서 0.50까지 성능을 향상시킨 것을 확인
 
