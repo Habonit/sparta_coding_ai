@@ -81,14 +81,19 @@
 
 ![MNLI - Result](https://github.com/user-attachments/assets/6b2f869e-19f4-4638-aa27-29c07f22d387)
 
+
         - 일반 30% 대에서 54% 정도의 accuracy와 f1, zeroshot으로는 55%의 accuracy와 f1을 기록했습니다.
 
+
     2) Translation: 링크의 4. 모델 결과 차트화 셀 참조.
+
 ![Translation - Loss Curve](https://github.com/user-attachments/assets/32c8f8dc-e4a3-4628-b136-2cda1f31e8ea)
 
 ![Translation - Result](https://github.com/user-attachments/assets/0cd54766-14b6-4c86-9cd8-d2d7ccc117da)
 
+
         - t5를 사용하여 초기 blew 0.42에서 0.50까지 성능을 향상시킨 것을 확인
+
 
 ## 5. 사용 Metric
 
