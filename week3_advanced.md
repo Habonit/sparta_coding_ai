@@ -3,10 +3,10 @@
 ## 1.어떤 Task를 선택하셨나요?
 
     1) MNLI: Premise와 Hypothesis 간의 중립 / 포함 / 모순 관계를 분류하는 자연어 추론(NLI) 문제입니다.
-        - 과제 링크
+        - 과제 링크: https://github.com/Habonit/sparta_coding_ai/blob/main/week3_advanced_mlni.ipynb
 
     2) Translation: 영어(EN)에서 프랑스어(FR)로 번역하는 시퀀스-투-시퀀스(Seq2Seq) 문제입니다.
-        - 과제 링크
+        - 과제 링크: https://github.com/Habonit/sparta_coding_ai/blob/main/week3_advanced_translation.ipynb
 
 ## 2.모델은 어떻게 설계하셨나요? 설계한 모델의 입력과 출력 형태는 어떻게 되나요?
 
@@ -34,15 +34,61 @@
 
 ## 3.데이터 입력 형태-Input의 형태가 어떻게 되나요?
 
-    1) MNLI: 위 과제 링크의의 1.7번 셀 참조 (이미지 첨부 예정).
+    1) MNLI: 위 과제 링크의의 1.7번 셀 참조.
 
-    2) Translation: 위 과제 링크의 1.3번 셀 참조 (이미지 첨부 예정).
+        input premise and hypothesis
+        Instead, you're still leading with Jacob Weisberg on Clinton's African apology (Sorry Excuse) and Cullen Murphy's discourse on lying (The Lie of the Land).
+        Clinton gave an apology to Africa.
+
+        input_ids shape
+        (400,)
+
+        attention_mask shape
+        (400,)
+
+        label
+        0
+
+    2) Translation: 위 과제 링크의 1.3번 셀 참조.
+
+        Source 데이터 형태
+        ['translate English to French: Hi.',
+        'translate English to French: Run!',
+        'translate English to French: Run!',
+        'translate English to French: Who?']
+
+        Target 데이터 형태
+        ['Salut!', 'Cours\u202f!', 'Courez\u202f!', 'Qui ?']
+
+        Model input 데이터 형태
+        {'attention_mask': [[1, 1, 1, 1, 1, 1, 1, 1],
+                            [1, 1, 1, 1, 1, 1, 1, 1],
+                            [1, 1, 1, 1, 1, 1, 1, 1],
+                            [1, 1, 1, 1, 1, 1, 1, 1]],
+        'input_ids': [[13959, 1566, 12, 2379, 10, 2018, 5, 1],
+                    [13959, 1566, 12, 2379, 10, 7113, 55, 1],
+                    [13959, 1566, 12, 2379, 10, 7113, 55, 1],
+                    [13959, 1566, 12, 2379, 10, 2645, 58, 1]],
+        'labels': [[25801, 55, 1],
+                    [13579, 7, 3, 55, 1],
+                    [13579, 457, 3, 55, 1],
+                    [6590, 3, 58, 1]]}
 
 ## 4.Fine-tuning 결과 - Fine-tuning 전후의 결과 차이가 어떻게 되나요?
 
-    1) MNLI: 링크의 4. 모델 결과 차트화 셀 참조 (이미지 첨부 예정).
+    1) MNLI: 링크의 4. 모델 결과 차트화 셀 참조.
+        ![alt text](image.png)
 
-    2) Translation: 링크의 4. 모델 결과 차트화 셀 참조 (이미지 첨부 예정).
+        ![alt text](image-2.png)
+
+        - 일반 30% 대에서 54% 정도의 accuracy와 f1, zeroshot으로는 55%의 accuracy와 f1을 기록했습니다.
+
+    2) Translation: 링크의 4. 모델 결과 차트화 셀 참조.
+        ![alt text](image-1.png)
+
+        ![alt text](image-3.png)
+
+        - t5를 사용하여 초기 blew 0.42에서 0.50까지 성능을 향상시킨 것을 확인
 
 ## 5. 사용 Metric
 
