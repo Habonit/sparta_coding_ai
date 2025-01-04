@@ -10,6 +10,9 @@ Premise와 Hypothesis 간의 중립 / 포함 / 모순 관계를 분류하는 자
 영어(EN)에서 프랑스어(FR)로 번역하는 시퀀스-투-시퀀스(Seq2Seq) 문제입니다.  
 - [과제 링크](https://github.com/Habonit/sparta_coding_ai/blob/main/week3_advanced_translation.ipynb)
 
+### 3) Ner
+개체명 인식을 하는 문제 입니다.
+- [과제 링크]()
 ---
 
 ## 2.모델은 어떻게 설계하셨나요? 설계한 모델의 입력과 출력 형태는 어떻게 되나요?
@@ -25,6 +28,12 @@ Premise와 Hypothesis 간의 중립 / 포함 / 모순 관계를 분류하는 자
 - **특징**: 번역 문제를 처리하기 위해 T5를 사용  
 - **입력**: 영어 문장 (EN)  
 - **출력**: 번역된 프랑스어 문장 (FR)  
+
+### 3) Ner
+- **모델 구조**: DistilBERT 기반의 텍스트 분류 모델   
+- **특징**: 경량화된 인코더 모델인 DistilBERT를 사용하며, 분류 개수(17개 클래스)에 맞춰 Text Classifier를 추가 
+- **입력**: 토큰화 된 단어어 
+- **출력**: 토큰에 태그된 Bio Tag
 
 ---
 
@@ -72,6 +81,24 @@ Model input 데이터 형태
             [13579, 457, 3, 55, 1],
             [6590, 3, 58, 1]]}
 
+### 3) Ner
+- **입력 데이터 형태**:
+
+DatasetDict({
+    train: Dataset({
+        features: ['id', 'tokens', 'ner_tags', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 37543
+    })
+    val: Dataset({
+        features: ['id', 'tokens', 'ner_tags', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 5611
+    })
+    test: Dataset({
+        features: ['id', 'tokens', 'ner_tags', 'input_ids', 'attention_mask', 'labels'],
+        num_rows: 4795
+    })
+})
+
 ## 4. Fine-tuning 결과
 
 ### 1) MNLI
@@ -93,6 +120,15 @@ Model input 데이터 형태
 
 - T5 모델을 사용하여 초기 BLEU 점수 0.42에서 0.50까지 성능을 향상시킨 것을 확인했습니다.
 
+### 3) NER
+![Translation - Loss Curve]()  
+*Loss Curve*  
+
+![Translation - Result]()  
+*Result Chart*  
+
+- acc 14%에서 94%, f1은 1%에서 64%까지 향상되었습니다.
+
 
 ## 5. 사용 Metric
 
@@ -102,6 +138,10 @@ Model input 데이터 형태
 
 ### 2) Translation
 - **BLEU Score**: 번역된 문장이 원문과 얼마나 유사한지 평가하는 점수 
+
+### 3) Ner
+- **Accuracy**: 모델이 올바르게 분류한 샘플의 비율  
+- **F1 Score (weighted)**: 클래스 불균형을 고려한 조화 평균  
 
 ## 6. 한계 및 어려웠던 점
 
@@ -114,3 +154,6 @@ Model input 데이터 형태
 2. **훈련 시간**: T5 모델의 파라미터 수가 많아 훈련 시간이 오래 걸려, 실험에 따른 개선을 확인하는 과정이 더디게 진행되었습니다.
 3. **Fine-tuning 전략**: 인코더-디코더 구조에서 어느 레이어를 동결하고 Fine-tuning할지 결정하는 데 참고할 자료가 부족하여, 실험을 통해 결정해야 했습니다.
 4. **Hugging Face Trainer 전환**: Naive PyTorch 코드에서 Hugging Face Trainer로 전환하면서, `tokenize` 함수와 `data collator`의 관계를 이해하는 데 시간이 소요되었습니다.
+
+### 3) Ner
+1. **전처리** :데이터가 문장이 아니라 토큰화된 문장의 리스트로 들어가면서 전처리를 이해하기가 까다로웠습니다.
