@@ -12,7 +12,7 @@ Premise와 Hypothesis 간의 중립 / 포함 / 모순 관계를 분류하는 자
 
 ### 3) Ner
 개체명 인식을 하는 문제 입니다.
-- [과제 링크]()
+- [과제 링크](https://github.com/Habonit/sparta_coding_ai/blob/main/week3_advanced_ner.ipynb)
 ---
 
 ## 2.모델은 어떻게 설계하셨나요? 설계한 모델의 입력과 출력 형태는 어떻게 되나요?
@@ -121,10 +121,10 @@ DatasetDict({
 - T5 모델을 사용하여 초기 BLEU 점수 0.42에서 0.50까지 성능을 향상시킨 것을 확인했습니다.
 
 ### 3) NER
-![Translation - Loss Curve]()  
+![Translation - Loss Curve](https://github.com/user-attachments/assets/ab12fbc6-bcad-4dd0-8bba-664302a698ec)  
 *Loss Curve*  
 
-![Translation - Result]()  
+![Translation - Result](https://github.com/user-attachments/assets/6439926b-38ed-4a9b-8017-f3dd9238b5cc)  
 *Result Chart*  
 
 - acc 14%에서 94%, f1은 1%에서 64%까지 향상되었습니다.
