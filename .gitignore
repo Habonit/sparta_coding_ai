@@ -4,3 +4,5 @@ utils.py/
 results/
 wandb/
 .results/
+config.env
+.cache/
