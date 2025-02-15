@@ -1,6 +1,11 @@
 ## 🚀 항해 플러스 AI 코스 2기
 - 해당 repository는 항해 플러스 AI 코스 2기의 모든 과제를 저장하여 추후에 나의 성과를 톺아보기 위한 저장소입니다.
 
+## 배지
+<a href="https://hhpluscertificateofcompletion.oopy.io/">
+  <img src="https://static.spartacodingclub.kr/hanghae99/plus/completion/badge_black.svg" />
+</a>
+
 ## 📅 프로젝트 기간
 - 2024년 12월 14일 ~ 2025년 2월 15일
 
@@ -15,3 +20,19 @@
 
 - 매주 학습하며 생기는 의문 사항을 기록하고 해결합니다.
 - 이를 velog에 포스팅하여 학습 내용을 정리하고 공유합니다.
+
+## 목차
+
+1) 
+
+2) 
+
+3) 
+
+4) 
+
+5) 
+
+6) 
+
+7) 
