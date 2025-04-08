@@ -1,7 +1,6 @@
-# 항해 플러스 AI 코스 과제 정리
-
-<a href="https://hhpluscertificateofcompletion.oopy.io/">
-  <img src="https://static.spartacodingclub.kr/hanghae99/plus/completion/badge_black.svg" alt="항해 플러스 수료 배지" height="60" />
+# 항해 플러스 AI 코스 과제 정리  
+<a href="https://hhpluscertificateofcompletion.oopy.io/">  
+  <img src="https://static.spartacodingclub.kr/hanghae99/plus/completion/badge_black.svg" alt="항해 플러스 수료 배지" height="60" />  
 </a>
 
 이 저장소는 항해 플러스 AI 코스에서 수행한 모든 과제를 체계적으로 저장하고 관리하기 위한 공간입니다. 각 주차별 실습 및 과제 내용을 정리하며, 학습 성과를 기록하고 향후 복습 및 포트폴리오로 활용할 수 있도록 구성하였습니다.
@@ -30,8 +29,8 @@
 
 | 주차 | 주제 | 정리 링크 |
 |------|------|------------|
-| Week 1 | MNIST 손글씨 데이터 분류: Batch vs Mini-batch vs SGD | [Velog 포스팅 보기](https://velog.io/@paradeigma/%ED%94%8C%EB%9F%AC%EC%8A%A4-AI-%EA%B3%BC%EC%A0%95-Batch-vs-Mini-batch-vs-SGD) |
-| Week 2 |  | 준비 중 |
+| Week 1 | MNIST 손글씨 데이터 분류: Batch vs Mini-batch vs SGD | [Velog 포스팅 보기](https://velog.io/@paradeigma/플러스-AI-과정-Batch-vs-Mini-batch-vs-SGD) |
+| Week 2 | 트랜스포머 파라미터 수 계산하기 | [Velog 포스팅 보기](https://velog.io/@paradeigma/플러스-AI-2.-트랜스포머-파라미터-수-계산하기) |
 | Week 3 |  | 준비 중 |
 | Week 4 |  | 준비 중 |
 | Week 5 |  | 준비 중 |

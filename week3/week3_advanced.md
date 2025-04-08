@@ -2,17 +2,18 @@
 
 ## 1. 어떤 Task를 선택하셨나요?
 
-### 1) MNLI
+### 1) MNLI  
 Premise와 Hypothesis 간의 중립 / 포함 / 모순 관계를 분류하는 자연어 추론(NLI) 문제입니다.  
-- [과제 링크](https://github.com/Habonit/sparta_coding_ai/blob/main/week3_advanced_mlni.ipynb)
+- [과제 링크](https://github.com/Habonit/sparta_coding_ai/blob/main/week3/week3_advanced_mlni.ipynb)
 
-### 2) Translation
+### 2) Translation  
 영어(EN)에서 프랑스어(FR)로 번역하는 시퀀스-투-시퀀스(Seq2Seq) 문제입니다.  
-- [과제 링크](https://github.com/Habonit/sparta_coding_ai/blob/main/week3_advanced_translation.ipynb)
+- [과제 링크](https://github.com/Habonit/sparta_coding_ai/blob/main/week3/week3_advanced_translation.ipynb)
 
-### 3) Ner
-개체명 인식을 하는 문제 입니다.
-- [과제 링크](https://github.com/Habonit/sparta_coding_ai/blob/main/week3_advanced_ner.ipynb)
+### 3) Ner  
+개체명 인식을 하는 문제 입니다.  
+- [과제 링크](https://github.com/Habonit/sparta_coding_ai/blob/main/week3/week3_advanced_ner.ipynb)
+
 ---
 
 ## 2.모델은 어떻게 설계하셨나요? 설계한 모델의 입력과 출력 형태는 어떻게 되나요?
