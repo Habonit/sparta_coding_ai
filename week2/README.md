@@ -119,4 +119,4 @@
 
 ## 발표자료
 
-- [Transformer 파라미터 발표자료 PPT](https://docs.google.com/presentation/d/14cJSaRBWkv99sa3OY4heF9m9S-RU3eCHt43yOUqupWk/edit?usp=drive_link)
+- [Transformer Parameter 발표자료 (PPTX)](week2/Transformer%20Parameter.pptx)
