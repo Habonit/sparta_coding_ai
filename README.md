@@ -33,8 +33,8 @@
 | Week 2 | 트랜스포머 파라미터 수 계산하기                         | [Velog 포스팅 보기](https://velog.io/@paradeigma/플러스-AI-2.-트랜스포머-파라미터-수-계산하기) |
 | Week 3 | Knowledge Distillation의 과거와 현재                | [Velog 포스팅 보기](https://velog.io/@paradeigma/Knowledge-Distillation의-과거와-현재) |
 | Week 4 | Transformer Fine-tuning & Prompt-based Classification                                           | [Velog 포스팅 보기](https://velog.io/@paradeigma/플러스-AI-4.-F1과-ROC-AUC) |
-| Week 5 | Vector Search & Local LangChain Chatbot                                                 | 준비 중 |
-| Week 6 | Correctly Project Midterm Review                                                 | 준비 중 |
+| Week 5 | Vector Search & Local LangChain Chatbot                                                 | 발표 생략 |
+| Week 6 | Correctly Project Midterm Review                                                 | [Velog 포스팅 보기](https://velog.io/@paradeigma/Correctly-중간-점검) |
 | Week 7 |                                                  | 준비 중 |
 
 ---
