@@ -8,7 +8,7 @@
 ---
 
 ## 프로젝트 기간
-- 2024년 12월 14일 ~ 진행중
+- 2024년 12월 14일 ~ 2025년 05월 30일
 
 ---
 
@@ -36,7 +36,10 @@
 | Week 5 | Vector Search & Local LangChain Chatbot                                                 | 발표 생략 |
 | Week 6 | Correctly Project Midterm Review                                                 | [Velog 포스팅 보기](https://velog.io/@paradeigma/Correctly-중간-점검) |
 | Week 7 | SFT vs DPO                                                 | [Velog 포스팅 보기](https://velog.io/@paradeigma/SFTvsDPO) |
-| Week 8 | 준비 중 | 준비 중 |
+| Week 8 | Airflow Operator 종류 | [Airflow Operator](https://velog.io/@paradeigma/Airflow-operator) |
+| Week 8 | SSH 통신의 불안정성 | [SSH 통신의 불안정성](https://velog.io/@paradeigma/ssh-%ED%86%B5%EC%8B%A0%EC%9D%98-%EB%B6%88%EC%95%88%EC%A0%95%EC%84%B1) |
+| Week 8 | 컨테이너 안에서 도커 사용 방식 | [컨테이너 안에서 도커 사용 방식](https://velog.io/@paradeigma/%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EC%95%88%EC%97%90%EC%84%9C-%EB%8F%84%EC%BB%A4-%EC%82%AC%EC%9A%A9-2%EA%B0%80%EC%A7%80-%EB%B0%A9%EC%8B%9D) |
+| Week 8 | Bridge 네트워크의 한계 | [Bridge 네트워크의 한계](https://velog.io/@paradeigma/MLOPS-%EC%8B%A4%EC%8A%B5-6.-Correctly-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%82%9C%EA%B4%80-4-Bridge-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%ED%95%9C%EA%B3%84) |
 
 ---
 
